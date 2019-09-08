@@ -86,7 +86,6 @@
 		if ($claim['success'] == 1)
 			{
 			return $claim['data']['message'];
-		{
 		$data = '{"promo_code":"AYOHEMAT"}';
 		$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
 		if ($claim['success'] == 1)
